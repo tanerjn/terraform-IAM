@@ -25,10 +25,10 @@ Remember good security practices, like using environment variables or a tool lik
 
 
 
-```AWS access is managed by setting IAM policies and linking them to IAM identities (users, groups of users, or roles) or AWS resources. A policy is an object in AWS that when associated with an identity or resource, defines their permissions. IAM policies specify what actions are allowed or denied on what AWS resources (e.g. user Alice can read objects from the “Production” bucket but can’t write objects in the “Dev” bucket whereas user Bob can have full access to S3).
+AWS access is managed by setting IAM policies and linking them to IAM identities (users, groups of users, or roles) or AWS resources. A policy is an object in AWS that when associated with an identity or resource, defines their permissions. IAM policies specify what actions are allowed or denied on what AWS resources (e.g. user Alice can read objects from the “Production” bucket but can’t write objects in the “Dev” bucket whereas user Bob can have full access to S3).
 
 S3 bucket policies, on the other hand, are resource-based policies that you can use to grant access permissions to your Amazon S3 buckets and the objects in it. S3 bucket policies can allow or deny requests based on the elements in the policy.(e.g. allow user Alice to PUT but not DELETE objects in the bucket).
 
 Note: You attach S3 bucket policies at the bucket level (i.e. you can’t attach a bucket policy to an S3 object), but the permissions specified in the bucket policy apply to all the objects in the bucket. You can also specify permissions at the object level by putting an object as the resource in the Bucket policy.
 
-IAM policies and S3 bucket policies are both used for access control and they’re both written in JSON using the AWS access policy language. ```
+IAM policies and S3 bucket policies are both used for access control and they’re both written in JSON using the AWS access policy language. 
